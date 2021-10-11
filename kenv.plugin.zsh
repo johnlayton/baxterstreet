@@ -36,6 +36,7 @@ fi
 
 if [[ $FOUND_KENV -eq 1 ]]; then
     eval "$(kenv init --no-rehash - zsh)"
+
     function current_kenv_desc() {
         echo "$(kenv machine-desc)"
     }
@@ -52,7 +53,6 @@ if [[ $FOUND_KENV -eq 1 ]]; then
 
     chpwd_functions=(${chpwd_functions[@]} "kenv_activate")
 else
-
     alias kenvs="echo 'not supported'"
 
     function current_kenv_desc() {
