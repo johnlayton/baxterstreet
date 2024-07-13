@@ -1,11 +1,11 @@
-## kenv
+## baxterstreet
 
 ### Setup oh-my-zsh
 
-#### Install buildkite plugin
+#### Install baxterstreet plugin
 ```zsh
 pushd $ZSH/custom/plugins && \
-  git clone git@github.com:johnlayton/baxterstreet.git kenv && \
+  git clone git@github.com:johnlayton/baxterstreet.git baxterstreet && \
   popd || echo "I'm broken"
 ```
 ```zsh
@@ -16,12 +16,12 @@ plugins=(... kenv)
 
 ```zsh
 pushd $HOME && \
-  git clone git@github.com:johnlayton/baxterstreet.git .kenv && \
+  git clone git@github.com:johnlayton/baxterstreet.git .baxterstreet && \
   popd || echo "I'm broken"
 ```
 
 ```zsh
-source ~/.kenv/kenv.plugin.zsh
+source ~/.baxterstreet/baxterstreet.plugin.zsh
 ```
 
 
